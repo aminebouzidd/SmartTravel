@@ -1,0 +1,72 @@
+name: smart_travel
+description: "Smart Travel Assistant - Application intelligente pour touristes"
+publish_to: 'none'
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.10.8
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+
+  # Firebase
+  firebase_core: ^4.7.0
+  firebase_auth: ^6.4.0
+  firebase_database: ^12.3.0
+
+  # State Management - Riverpod
+  flutter_riverpod: ^2.6.1
+
+  # Google ML Kit (on-device, pas besoin de Firebase)
+  google_mlkit_text_recognition: ^0.14.0
+  google_mlkit_language_id: ^0.12.0
+  google_mlkit_translation: ^0.12.0
+  google_mlkit_entity_extraction: ^0.14.0
+
+  # Camera & Image
+  camera: ^0.11.1
+  image_picker: ^1.1.2
+
+  # Network
+  http: ^1.3.0
+
+  # Local Storage
+  sqflite: ^2.4.2
+  path: ^1.9.1
+  shared_preferences: ^2.3.4
+  path_provider: ^2.1.5
+
+  # Notifications locales
+  flutter_local_notifications: ^18.0.0
+  timezone: ^0.9.4
+
+  # Audio feedback
+  audioplayers: ^6.1.0
+
+  # UI Utilities
+  intl: ^0.20.2
+  google_fonts: ^6.2.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/to/font-from-package
